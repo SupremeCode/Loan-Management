@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MakePaymentWindowController">
+   <children>
+      <Button layoutX="314.0" layoutY="433.0" mnemonicParsing="false" onAction="#goBack" text="Go Back" textAlignment="CENTER" />
+      <Label layoutX="45.0" layoutY="268.0" text="Note: Take a Photo if another authorized person" />
+      <Label layoutX="77.0" layoutY="292.0" text=" in current transaction" />
+      <Label fx:id="firstN" layoutX="34.0" layoutY="41.0" text="First Name">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="lastN" layoutX="34.0" layoutY="68.0" text="Last Name">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="45.0" layoutY="163.0" text="Amount to Pay:" />
+      <Label layoutX="321.0" layoutY="156.0" text=".">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <HBox layoutX="138.0" layoutY="156.0" prefHeight="32.0" prefWidth="25.0">
+         <children>
+            <TextField fx:id="millions" onAction="#millionsMethod" prefHeight="25.0" prefWidth="25.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="163.0" layoutY="156.0" prefHeight="32.0" prefWidth="76.0">
+         <children>
+            <Label text=",">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="hundredThousands" onAction="#hundredThousandsMethod" prefHeight="25.0" prefWidth="25.0" />
+            <TextField fx:id="tenThousands" onAction="#tenThousandsMethod" prefHeight="25.0" prefWidth="25.0" />
+            <TextField fx:id="thousands" onAction="#thousandsMethod" prefHeight="25.0" prefWidth="25.0" />
+         </children>
+      </HBox>
+      <Label layoutX="239.0" layoutY="156.0" text=",">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="amount" layoutX="256.0" layoutY="195.0" prefHeight="25.0" prefWidth="117.0" />
+      <Label layoutX="86.0" layoutY="369.0" text="REQUIRED:" textFill="#f80606" />
+      <Label layoutX="34.0" layoutY="102.0" text="Current Balance:" />
+      <Label fx:id="currentBalance" layoutX="130.0" layoutY="102.0" text="Label" />
+      <HBox layoutX="247.0" layoutY="156.0" prefHeight="32.0" prefWidth="76.0">
+         <children>
+            <TextField fx:id="hundreds" onAction="#hundredsMethod" prefHeight="25.0" prefWidth="25.0" />
+            <TextField fx:id="tens" onAction="#tensMethod" prefHeight="25.0" prefWidth="25.0" />
+            <TextField fx:id="ones" onAction="#onesMethod" prefHeight="25.0" prefWidth="25.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="326.0" layoutY="156.0" prefHeight="32.0" prefWidth="54.0">
+         <children>
+            <TextField fx:id="cent1" onAction="#cent1method" prefHeight="25.0" prefWidth="25.0" />
+            <TextField fx:id="cent2" onAction="#cent2method" prefHeight="25.0" prefWidth="25.0" />
+         </children>
+      </HBox>
+      <Label layoutX="45.0" layoutY="335.0" text="Name of Recipient:" />
+      <Label layoutX="139.0" layoutY="199.0" text="Amount OK?" />
+      <Button fx:id="okBtn" layoutX="214.0" layoutY="195.0" mnemonicParsing="false" onAction="#ok" onKeyTyped="#enterPressed1" text="OK" />
+      <Button layoutX="197.0" layoutY="288.0" mnemonicParsing="false" text="Take a Photo" />
+      <TextField fx:id="authorized" layoutX="153.0" layoutY="325.0" prefHeight="25.0" prefWidth="178.0" />
+      <Button fx:id="fingerprintBtn" layoutX="150.0" layoutY="365.0" mnemonicParsing="false" onAction="#fingerprint" onKeyTyped="#enterPressed2" text="Fingerprint Scan" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CompleteWindowController">
+   <children>
+      <Button layoutX="309.0" layoutY="427.0" mnemonicParsing="false" onAction="#goBack" text="Go Back" />
+      <TableView fx:id="table" layoutX="88.0" layoutY="37.0" prefHeight="289.0" prefWidth="300.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+        <columns>
+          <TableColumn fx:id="lastNameColumn" prefWidth="111.0" text="Last Name" />
+          <TableColumn fx:id="firstNameColumn" prefWidth="110.0" text="First Name" />
+            <TableColumn fx:id="balanceColumn" prefWidth="78.0" text="Balance" />
+        </columns>
+      </TableView>
+      <Button layoutX="159.0" layoutY="345.0" mnemonicParsing="false" onAction="#saveToExcel" text="Save to Excel" />
+      <Button layoutX="174.0" layoutY="381.0" mnemonicParsing="false" onAction="#retrieve" text="Retrieve" />
+   </children>
+</AnchorPane>

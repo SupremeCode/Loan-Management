@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FirstWindowController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="43.0" text="Loan Management" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER" layoutX="150.0" layoutY="116.0" prefHeight="200.0" prefWidth="100.0" spacing="20.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0">
+         <children>
+            <Button maxWidth="200.0" mnemonicParsing="false" onAction="#checkExistingLoans" text="Check Existing Loans">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#completeList" prefWidth="200.0" text="Complete List">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#addNewLoan" prefWidth="200.0" text="Add New Loan">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#overdue" prefHeight="25.0" prefWidth="200.0" text="Overdue">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#exit" prefWidth="200.0" text="Exit">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

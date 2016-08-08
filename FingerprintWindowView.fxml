@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FingerprintWindowController">
+   <children>
+      <Label fx:id="last" alignment="CENTER" contentDisplay="CENTER" layoutX="29.0" layoutY="71.0" text="Last Name" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="first" alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="41.0" text="First Name" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="130.0" text="Balance:" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="27.0" layoutY="169.0" text="Amount Paid:" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="23.0" layoutY="201.0" text="Payment Date:" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="157.0" layoutY="285.0" mnemonicParsing="false" onAction="#capture" text="Capture">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="170.0" layoutY="400.0" mnemonicParsing="false" onAction="#save" text="Save">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="173.0" layoutY="132.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="amtPaid" layoutX="173.0" layoutY="171.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="datePaid" layoutX="173.0" layoutY="203.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="258.0" text="Place the thumb of Payer then click Capture">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="366.0" text="Approved By:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="approvedBy" layoutX="132.0" layoutY="354.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button layoutX="330.0" layoutY="453.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+      <Label fx:id="fSaved" layoutX="257.0" layoutY="294.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

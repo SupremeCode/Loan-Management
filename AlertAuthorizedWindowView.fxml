@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="163.0" prefWidth="270.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AlertAuthorizedWindowController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="46.0" layoutY="74.0" prefHeight="21.0" prefWidth="158.0" text="Type your name as the " textAlignment="CENTER" AnchorPane.leftAnchor="46.0" AnchorPane.rightAnchor="46.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="100.0" layoutY="124.0" mnemonicParsing="false" onAction="#close" text="OK" textAlignment="CENTER" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" />
+      <Label layoutX="94.0" layoutY="37.0" text="Missing Name" textFill="#fc0808">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="65.0" fitWidth="67.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@warning.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="8.0" layoutY="95.0" text="Authorized Person to Receive payment">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
